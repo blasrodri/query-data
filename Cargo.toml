@@ -1,0 +1,19 @@
+[package]
+name = "david"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hex = "0.4.3"
+subxt = { git = "https://github.com/paritytech/subxt", rev = "ec23283d75e4b3b894294e351fd7ffa2b4431201" }
+serde = "1.0.137"
+tokio = { version = "1.17.0", features = ["full"] }
+frame-support = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.24" }
+sp-core = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.24" }
+codec = { package = "parity-scale-codec", version = "3.0.0", features = ["derive"] }
+serde_json = { version = "1" }
+ibc = { git = "https://github.com/composableFi/ibc-rs", rev = "13de07663749a59a424d67bb259a714182df28eb", features = ["ics11_beefy"] }
+ibc-proto = { git = "https://github.com/composableFi/ibc-rs", rev = "13de07663749a59a424d67bb259a714182df28eb" }
+ibc-rpc = { git = "https://github.com/ComposableFi/composable", rev = "f317fb8f4b3f03e7dc6f7d4c78716fa654e1aebb" }
